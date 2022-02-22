@@ -1,0 +1,25 @@
+
+
+<body>
+{{#if coches}}
+    <h1>Listado de coches</h1>
+    <div class="d-flex">
+        {{#each coches}} 
+            <div class="card me-3" style="width: 18rem;">
+                <img src="{{imagen}}" class="card-img-top" alt="imagen de {{modelo}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{modelo}}</h5>
+                        <p class="card-text">{{potencia}} Cv</p>
+                        <a href="#" class="btn btn-primary">Editar</a>
+                        <a href="#" class="btn btn-danger">Eliminar</a>
+                    </div>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <h1>Todavía no has añadido ningún coche</h1>
+
+{{/if}}
+    
+
+</body>
