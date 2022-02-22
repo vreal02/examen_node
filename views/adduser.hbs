@@ -1,0 +1,25 @@
+
+{{> header}}
+<form class="form-control d-flex flex-column align-items-center" style="width: 25%;" action="/users/add" method="post">
+    <h1 class="mb-3">Añade un Usuario</h1>
+    <div class="input-group mb-3" >
+        <span class="input-group-text" >Nombre</span>
+        <input type="text" name="nombre" class="form-control">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Apellidos</span>
+        <input type="text" name="apellidos" class="form-control">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Mail</span>
+        <input type="text" name="mail" class="form-control">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Contraseña</span>
+        <input type="text" name="pass" class="form-control">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary mb-3">Crear</button>
+    </div>
+    
+</form>

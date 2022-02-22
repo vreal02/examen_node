@@ -1,0 +1,26 @@
+<form class="form-control d-flex flex-column align-items-center" style="width: 25%;" action="/users/edit/{{id_usuario}}" method="post">
+
+    <h1 class="mb-3">Edita este usuario</h1>
+
+    <div class="input-group mb-3" >
+        <span class="input-group-text" >Nombre</span>
+        <input type="text" name="nombre" class="form-control" value="{{nombre}}">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Apellidos</span>
+        <input type="text" name="apellidos" class="form-control" value="{{apellidos}}">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Mail</span>
+        <input type="text" name="mail" class="form-control" value="{{mail}}">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Contraseña</span>
+        <input type="text" name="pass" class="form-control" value="{{pass}}">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary mb-3">Editar</button>
+    </div>
+    
+    
+</form>
